@@ -9,11 +9,12 @@
     Each try must have at least one corresponding catch or finally block.
 */
 
-function inverse($x) {
-    if(!$x) {
+function inverse($x)
+{
+    if (!$x) {
         throw new Exception('Division by zero');
     }
-    return 1/$x;
+    return 1 / $x;
 }
 
 

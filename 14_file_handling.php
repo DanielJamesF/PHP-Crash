@@ -8,14 +8,13 @@
 
 $file = 'extras/user.txt';
 
-if(file_exists($file)) {
+if (file_exists($file)) {
     // echo readfile($file);
     $handle = fopen($file, 'r');
     $contents = fread($handle, filesize($file));
     fclose($handle);
     echo $contents;
-} 
-else {
+} else {
     $handle = fopen($file, 'w');
     $contents = 'Daniel' . PHP_EOL . 'Sara' . PHP_EOL . 'Mike';
     fwrite($handle, $contents);

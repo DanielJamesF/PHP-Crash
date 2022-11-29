@@ -17,7 +17,7 @@ echo strrev($string);
 echo strtolower($string);
 
 // Convert all characters to uppercase
-echo strtoupper($string); 
+echo strtoupper($string);
 
 // Uppercase the first character of each word
 echo ucwords($string);
@@ -44,4 +44,4 @@ echo htmlspecialchars($string2);
 
 printf('%s likes to %s', 'Brad', 'code');
 
-printf('1+1=%d', 1+1);
+printf('1+1=%d', 1 + 1);

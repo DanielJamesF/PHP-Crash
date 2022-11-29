@@ -43,4 +43,3 @@ $person = [
 ];
 // echo $person[0]['email'];
 var_dump(json_encode($person));
-?>

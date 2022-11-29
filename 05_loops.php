@@ -59,6 +59,6 @@ $person = [
     'last_name' => 'Fredericks',
     'email' => 'daniel@gmail.com',
 ];
-foreach($person as $key => $value) {
+foreach ($person as $key => $value) {
     echo "$key - $value<br>";
 }

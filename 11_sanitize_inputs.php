@@ -3,7 +3,7 @@
 /*
 We can pass data through urls and forms using the $_GET and $_POST superglobals
 */
-if(isset($_POST['submit'])) {
+if (isset($_POST['submit'])) {
     $name = filter_input(INPUT_POST, 'name', FILTER_SANITIZE_SPECIAL_CHARS);
     $name = filter_input(INPUT_POST, 'age', FILTER_SANITIZE_SPECIAL_CHARS);
 
@@ -13,7 +13,7 @@ if(isset($_POST['submit'])) {
 }
 ?>
 
-<form action="<?php htmlspecialchars($_SERVER['PHP_SELF']); ?>"method="POST">
+<form action="<?php htmlspecialchars($_SERVER['PHP_SELF']); ?>" method="POST">
     <div>
         <label for="Name">Name: </label>
         <input type="text" name="name">

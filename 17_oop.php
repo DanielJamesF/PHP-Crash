@@ -7,7 +7,8 @@
     Objects can be created from classes.
 */
 
-class User {
+class User
+{
     // Propertoes are attributes that belong to a class
 
     // Access Modifiers: public, private, protected
@@ -19,19 +20,22 @@ class User {
     public $password;
 
     // A constructor is a method that runs when an object is created
-    public function __construct($name, $email, $password) {
+    public function __construct($name, $email, $password)
+    {
         $this->name = $name;
         $this->email = $email;
         $this->password = $password;
     }
 
     // Method is afunction that belongs to a class
-    function set_name($name) {
+    function set_name($name)
+    {
         $this->name = $name;
     }
 
-    function get_name() {
-        return $this->name; 
+    function get_name()
+    {
+        return $this->name;
     }
 }
 
@@ -47,12 +51,15 @@ $user2 = new User('James', 'james@gmail.com', 'password');
 
 // Inheritence
 
-class employee extends User {
-    public function __construct($name, $email, $password, $title) {
+class employee extends User
+{
+    public function __construct($name, $email, $password, $title)
+    {
         parent::__construct($name, $email, $password);
         $this->title = $title;
     }
-    public function get_title() {
+    public function get_title()
+    {
         return $this->title;
     }
 }

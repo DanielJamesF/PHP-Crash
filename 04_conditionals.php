@@ -43,7 +43,7 @@ $posts = [];
 // $firstPost = $posts[0] ?? null;
 // echo $firstPost;
 $favcolor = '';
-switch($favcolor) {
+switch ($favcolor) {
     case 'red':
         echo 'Your favourite color is red';
         break;
@@ -53,5 +53,5 @@ switch($favcolor) {
     case 'green':
         echo 'Your favourite color is green';
     default:
-    echo 'Your favourite color is not red, blue, pr green';
+        echo 'Your favourite color is not red, blue, pr green';
 }

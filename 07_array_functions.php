@@ -49,14 +49,14 @@ $numbers = range(1, 20);
 
 // print_r($numbers);
 
-$newNumbers = array_map(function($number) {
+$newNumbers = array_map(function ($number) {
     return "Number ${number}";
 }, $numbers);
 
 // print_r($newNumbers);
 
-$lessThan10 = array_filter($numbers, fn($number) => $number <= 10);
+$lessThan10 = array_filter($numbers, fn ($number) => $number <= 10);
 // print_r($lessThan10);
 
-$sum = array_reduce($numbers, fn($carry, $number) => $carry + $number);
+$sum = array_reduce($numbers, fn ($carry, $number) => $carry + $number);
 // var_dump($sum);

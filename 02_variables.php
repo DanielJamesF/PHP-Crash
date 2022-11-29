@@ -34,4 +34,3 @@ $x = '5' + '5';
 define('HOST', 'localhost');
 define('DB_NAME', 'dev_db');
 echo HOST;
-?>
