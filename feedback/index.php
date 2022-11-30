@@ -27,13 +27,13 @@ if (isset($_POST['submit'])) {
 
   if ((empty($nameErr)) && (empty($emailErr)) && (empty($bodyErr))) {
     // Add to database
-    $sql = "INSERT INTO feedback (name, email, body) VALUES ($name, $email, $body)";
+    $sql = "INSERT INTO feedback (name, email, body) VALUES ('$name', '$email', '$body')";
 
     if (mysqli_query($conn, $sql)) {
       // Success
       header('Location: feedback.php');
     } else {
-      // Erro
+      // Error
       echo 'Error: ' . mysqli_error($conn);
     }
   }
@@ -45,7 +45,7 @@ echo $name;
 
 <img src="/php-crash/feedback/img/logo.gif" class="w-25 mb-3" alt="">
 <h2>Feedback</h2>
-<p class="lead text-center">Leave feedback for Danny Medi</p>
+<p class="lead text-center">Leave feedback for Danny Media</p>
 <form action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']) ?>" method="POST" class="mt-4 w-75">
   <div class="mb-3">
     <label for="name" class="form-label">Name</label>
